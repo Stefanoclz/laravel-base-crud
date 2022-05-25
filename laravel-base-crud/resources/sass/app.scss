@@ -1,1 +1,40 @@
-//
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: lightblue;
+
+
+    .container {
+        width: 85%;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2%;
+        row-gap: 40px;
+
+        .card {
+            width: calc(100% / 6) - 2%;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            text-align: center;
+            border: 1px solid black;
+            transition: 0.5s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+                border: 1px solid yellowgreen;
+            }
+
+            .text {
+                overflow-y: auto;
+            }
+        }
+    }
+}

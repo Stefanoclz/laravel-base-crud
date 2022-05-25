@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: lightblue;
+}
+
+body .container {
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  row-gap: 40px;
+}
+
+body .container .card {
+  width: 14.6666666667%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+  border: 1px solid black;
+  transition: 0.5s ease-in;
+}
+
+body .container .card:hover {
+  transform: scale(1.1);
+  border: 1px solid yellowgreen;
+}
+
+body .container .card .text {
+  overflow-y: auto;
+}
+
