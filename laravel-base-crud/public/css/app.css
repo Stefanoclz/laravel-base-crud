@@ -31,11 +31,47 @@ body .container .card {
 }
 
 body .container .card:hover {
-  transform: scale(1.1);
+  filter: contrast(150%);
   border: 1px solid yellowgreen;
 }
 
 body .container .card .text {
   overflow-y: auto;
+}
+
+.detail-container {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.detail-container a {
+  align-self: center;
+  text-decoration: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.detail-container .left,
+.detail-container .right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  row-gap: 20px;
+}
+
+.detail-container img {
+  width: 40%;
 }
 

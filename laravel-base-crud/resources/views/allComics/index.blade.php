@@ -23,6 +23,7 @@
                 <div class="text">
                     <p>{{ $comic->description }}</p>
                 </div>
+                <a href="{{ route('allComics.show', $comic->id) }}">More</a>
             </div>
         @endforeach
     </div>
