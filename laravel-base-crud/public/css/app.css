@@ -6,7 +6,8 @@
 
 body {
   text-align: center;
-  background-color: lightblue;
+  background-image: url(https://f.vividscreen.info/soft/0202fbf665fad76e9a52368455963b79/DC-Comics-Superheroes-1920x1200.jpg);
+  color: white;
 }
 
 body .container {
@@ -39,21 +40,26 @@ body .container .card .text {
   overflow-y: auto;
 }
 
+body .container .card a {
+  text-decoration: none;
+  color: yellow;
+}
+
 .detail-container {
   width: 90%;
   margin: 100px auto;
   display: flex;
   -moz-column-gap: 5%;
        column-gap: 5%;
-  border: 1px solid black;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .detail-container a {
   align-self: center;
   text-decoration: none;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  background-color: rgba(11, 27, 99, 0.712);
   padding: 10px 20px;
   border-radius: 15px;
   border: 1px solid black;
@@ -66,7 +72,6 @@ body .container .card .text {
   text-align: center;
   align-items: center;
   width: 45%;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   row-gap: 20px;
 }
