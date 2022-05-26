@@ -23,6 +23,16 @@
             <h2>{{ $comic->description }}</h2>
         </div>
     </div>
+
+
+    <form action="{{ route('allComics.destroy', $comic->id) }}" method="post">
+        @csrf
+        Clicca per eliminare l'elemento
+        @method('DELETE')
+
+        <input type="submit" value="Elimina">
+
+    </form>
 </body>
 
 </html>

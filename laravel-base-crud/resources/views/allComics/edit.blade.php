@@ -18,7 +18,7 @@
             <label for="title">Title</label>
         </div>
         <div>
-            <input type="url" name="thumb" value="{{ $comic->image }}">
+            <input type="url" name="thumb" value="{{ $comic->thumb }}">
             <label for="thumb">Link</label>
         </div>
         <div>
@@ -26,7 +26,7 @@
             <label for="price">Price</label>
         </div>
         <div>
-            <textarea name="description"></textarea>
+            <textarea name="description">{{ $comic->description }}</textarea>
             <label for="description">Description</label>
         </div>
         <div>

@@ -40,9 +40,26 @@ body .container .card .text {
   overflow-y: auto;
 }
 
-body .container .card a {
+body .container .interaction {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: space-around;
+}
+
+body .container .interaction a {
   text-decoration: none;
   color: yellow;
+  transition: 0.5s ease-in;
+  background-color: crimson;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+body .container .interaction a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .detail-container {

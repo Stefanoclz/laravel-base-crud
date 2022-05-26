@@ -25,8 +25,8 @@
                 </div>
                 <div class="interaction">
                     <a href="{{ route('allComics.show', $comic->id) }}">More</a>
-                    <a href="{{ route('allComics.create') }}">inserisci nuovo fumetto</a>
-                    <a href="{{ route('allComics.edit', $comic->id) }}">aggiorna</a>
+                    <a href="{{ route('allComics.create') }}">Crea nuovo</a>
+                    <a href="{{ route('allComics.edit', $comic->id) }}">Aggiorna</a>
                 </div>
             </div>
         @endforeach
