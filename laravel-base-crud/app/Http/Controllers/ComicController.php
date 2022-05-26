@@ -55,7 +55,7 @@ class ComicController extends Controller
         $newComic->save();
         $id = $newComic->id;
 
-        return redirect()->route('allComics.index');
+        return redirect()->route('allComics.show', $id);
     }
 
     /**
@@ -102,7 +102,7 @@ class ComicController extends Controller
 
         $comic->update();
 
-        return redirect()->route('allComics.index');
+        return view('allComics.show', compact('comic'));
     }
 
     /**
