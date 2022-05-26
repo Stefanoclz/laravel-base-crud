@@ -23,7 +23,10 @@
                 <div class="text">
                     <p>{{ $comic->description }}</p>
                 </div>
-                <a href="{{ route('allComics.show', $comic->id) }}">More</a>
+                <div class="interaction">
+                    <a href="{{ route('allComics.show', $comic->id) }}">More</a>
+                    <a href="{{ route('allComics.create') }}">inserisci nuovo fumetto</a>
+                </div>
             </div>
         @endforeach
     </div>
