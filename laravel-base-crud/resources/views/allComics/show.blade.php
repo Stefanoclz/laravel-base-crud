@@ -30,9 +30,11 @@
         Clicca per eliminare l'elemento
         @method('DELETE')
 
-        <input type="submit" value="Elimina">
+        <input id="delete" type="submit" value="Elimina">
 
     </form>
+
 </body>
+<script src="{{ asset('js/script.js') }}" defer></script>
 
 </html>
